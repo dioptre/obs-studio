@@ -8,6 +8,12 @@ Feel free to ask questions!
 ## Installing on debian or ubuntu
 Get the dependencies:
 ```
+sudo apt install software-properties-common -y && \
+sudo apt-add-repository non-free && \
+sudo apt-get update
+```
+Then:
+```
 sudo apt-get install \
            build-essential \
            checkinstall \
@@ -50,7 +56,7 @@ sudo apt-get install \
            libxcb-randr0-dev \
            libxcb-xfixes0-dev \
            libx11-xcb-dev \
-           libxcb1-dev
+           libxcb1-dev -y
 ```
 
 Then build (with browser source):
