@@ -73,3 +73,8 @@ cmake -DUNIX_STRUCTURE=1 -DCMAKE_INSTALL_PREFIX=/usr ..
 make -j4
 sudo make install
 ```
+## Running
+After you've followed the instructions above just run:
+```
+obs
+```
