@@ -5,7 +5,7 @@ This is my fork of OBS Studio with support for queuing of files and realtime pla
 Feel free to ask questions!
 
 
-## Installing on debian
+## Installing on debian or ubuntu
 Get the dependencies:
 ```
 sudo apt-get install \
