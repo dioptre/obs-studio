@@ -130,7 +130,7 @@ static void *watcher_source_watch(void *data)
 		/* Add a file to the queue if a file was created */
 		for (p = buf; p < buf + numRead;) {
 			event = (struct inotify_event *)p;
-			if (event->mask & IN_CREATE) {
+			if (event->mask & IN_CREATE || event->mask & IN_MOVED_TO) {
 				//printf("Found file %s\n", event->name);
 				struct calldata msg;
 				pthread_mutex_lock(&watcher_mutex);
